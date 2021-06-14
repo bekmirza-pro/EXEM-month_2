@@ -67,7 +67,7 @@
   .header--adaptive .site-nav {
     display: block;
     position: fixed;
-    top: 19%;
+    top: 20%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -81,7 +81,7 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    padding: 124px 33px;
+    padding: 100px 33px;
   }
   .header--adaptive .header-left .header-left-item {
     display: inline-block;
@@ -95,6 +95,14 @@
     font-size: 24px;
     line-height: 32px;
     color: #e5ecf4;
+  }
+  .header--adaptive .header-right {
+    z-index: 33;
+    position: absolute;
+    display: block;
+    top: 450%;
+    left: 15%;
+    // transform: translateX(65%);
   }
   .humburger_btn {
     display: block;
