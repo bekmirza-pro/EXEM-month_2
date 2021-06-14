@@ -13,11 +13,11 @@
 }
 .good-list-items::after {
   position: absolute;
-  width: 275px;
-  height: 275px;
+  width: 265px;
+  height: 265px;
   border-radius: 50%;
   background-color: #e5ecf4;
-  transform: translateX(398%) translateY(30%);
+  transform: translateX(388%) translateY(40%);
   content: "";
 }
 @media only screen and (max-width: 1257px) {
