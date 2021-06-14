@@ -1,0 +1,116 @@
+.intro-section .container {
+  padding: 0 20px;
+  margin-top: 100px;
+}
+.intro-section {
+  width: 100%;
+  padding: 165px 0px;
+  margin-bottom: 160px;
+  background-image: url(/images/intro-Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .intro-section {
+    background-image: url(/images/intro-Bitmap.jpg);
+  }
+}
+.site-heading {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 56px;
+}
+.intro-paragraf {
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  font-size: 15px;
+  font-family: 'Lexend Deca';
+  line-height: 25px;
+  color: #ffffff;
+}
+.intro-paragraf::before {
+  content: url(/images/intro-line2.svg);
+  transform: translateX(-50%);
+}
+
+.intro-paragraf::after {
+  content: url(/images/intro-line.svg);
+  transform: translateX(20%) translateY(40%);
+}
+.intro-section-item .header-button {
+  margin-left: 300px;
+}
+.intro-button {
+  padding: 14px 39px;
+  margin-left: 300px;
+  cursor: pointer;
+  background-color: #fcb72b;
+  border: none;
+  color: #fff;
+}
+.intro-button:hover {
+  background-color: #495567;
+  color: #fcb72b;
+  box-shadow: 0 0 0 2px #fcb72b;
+}
+@media only screen and (max-width: 1257px) {
+  .intro-section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .intro-section {
+    background-position: -560px;
+  }
+  .site-heading {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .intro-paragraf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    // margin-left: 0;
+  }
+  .intro-button {
+    transform: translateY(-120%);
+    text-align: center;
+    margin: 0 auto;
+    // margin-left: 0px;
+  }
+  .intro-paragraf::before {
+    display: none;
+  }
+  .intro-paragraf::after {
+    transform: translateX(-60%) translateY(120%);
+  }
+}
+@media only screen and (max-width: 557px) {
+  .site-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .intro-section {
+    background-position: -1150px;
+  }
+
+}

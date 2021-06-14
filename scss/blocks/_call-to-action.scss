@@ -1,0 +1,42 @@
+.call-to-action {
+  background-color: #495567;
+  background-image: url(/images/circular.svg);
+  background-repeat: no-repeat;
+  background-position: 690px 180px;
+}
+
+.action-item {
+  padding: 82px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.action-heading {
+    width: 100%;
+    max-width: 480px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+@media only screen and (max-width: 900px){
+  .action-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .call-to-action{
+    background-position:-100px 250px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .action-heading {
+    font-size: 32px;
+  }
+  .call-to-action{
+    background-position:-550px 250px;
+  }
+  .action-link{
+    width: 133px;
+    height: 40px;
+  }
+}

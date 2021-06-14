@@ -1,0 +1,124 @@
+.guide-section .container {
+  margin-top: 169px;
+  margin-bottom: 150px;
+}
+
+.guide-section::before {
+  content: "";
+  position: absolute;
+  width: 66%;
+  height: 1px;
+  border: 8px solid #e5ecf4;
+  background-color: #e5ecf4;
+  transform: translateY(230%);
+}
+
+.section-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.list-item {
+  width: 100%;
+  max-width: 350px;
+  margin-right: 30px;
+}
+.list-heading {
+  font-size: 24px;
+  line-height: 28px;
+  color: #495567;
+}
+.list-paragraf {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  line-height: 25px;
+  color: #939caa;
+}
+.list-item:nth-child(1)::before {
+  position: relative;
+  z-index: 10;
+  content: url(/images/guide-img1.svg);
+}
+.list-item:nth-child(2)::before {
+  position: relative;
+  z-index: 10;
+  content: url(/images/guide-img2.svg);
+}
+.list-item:nth-child(3)::before {
+  position: relative;
+  z-index: 10;
+  content: url(/images/guide-img3.svg);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .list-item:nth-child(1)::before {
+    content: url(/images/guide-img2x.1.svg);
+  }
+  .list-item:nth-child(2)::before {
+    content: url(/images/Guide-img2@2x.svg);
+  }
+  .list-item:nth-child(3)::before {
+    content: url(/images/Guide-img3@2x.svg);
+  }
+}
+@media only screen and (max-width: 790px) {
+  .section-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-item {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .list-info {
+      width: 100%;
+    max-width: 600px;
+    margin-left: 20px;
+  }
+  .list-item:nth-child(n)::before {
+    margin-right: 30px;
+  }
+  .guide-section::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    border: 8px solid #e5ecf4;
+    background-color: #e5ecf4;
+    transform: translateX(930%) translateY(-28.5%);
+  }
+}
+@media only screen and (max-width: 750px) {
+  .guide-section::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+    .list-item:nth-child(n)::before{
+        margin-right: 0;
+    }
+    .list-info{
+        margin-left: 0;
+    }
+  .section-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+  }
+}
+
