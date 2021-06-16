@@ -1,0 +1,38 @@
+.locations-health-section {
+    margin-top: 132px;
+    background-image: url(/images/locations-Bitmap.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      .locations-health-section {
+      background-image: url(/images/locations-Bitmap@2x.png);
+    }
+  }
+  .locations {
+      padding: 73px 0;
+    font-size: 56px;
+    line-height: 56px;
+    color: #ffffff;
+  }
+  @media only screen and (max-width: 720px){
+    .locations-health-section{
+      background-position: left;
+    }
+  }
+  @media only screen and (max-width: 457px){
+    .locations-health-section{
+      background-position: center;
+    }
+    .locations{
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  

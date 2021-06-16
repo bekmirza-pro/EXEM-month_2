@@ -27,14 +27,15 @@
   line-height: 25px;
   color: #939caa;
 }
-.footer-nav-item:hover{
-  color: #FCB72B;
+.footer-nav-item:hover {
+  color: #fcb72b;
 }
- .footer-link:hover path{
-  fill:#fff;
+.footer-link:hover path {
+  fill: #fff;
 }
 .footer-link {
   margin-left: 15px;
+  color: #333A44;
 }
 @media only screen and (max-width: 650px) {
   .footer-item {

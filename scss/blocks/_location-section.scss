@@ -1,0 +1,254 @@
+.location-link {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1070px;
+  height: 580px;
+  background-image: url(/images/locations1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.link-mobil {
+  display: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .location-link {
+    background-image: url(/images/locations2x.png);
+  }
+}
+.location-1 {
+  position: absolute;
+  transform: translateX(220%) translateY(90%);
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #495567;
+  background-color: #fcb72b;
+}
+.location-1::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translateX(-160%) translateY(105%);
+  border: 20px solid transparent;
+  border-top-color: #fcb72b;
+  content: "";
+}
+.location-2 {
+  position: absolute;
+  transform: translateX(70%) translateY(160%);
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #495567;
+  background-color: #fcb72b;
+}
+.location-2::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translateX(-200%) translateY(105%);
+  border: 20px solid transparent;
+  border-top-color: #fcb72b;
+  content: "";
+}
+.location-3 {
+  position: absolute;
+  transform: translateX(370%) translateY(180%);
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #495567;
+  background-color: #fcb72b;
+}
+.location-3::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translateX(-190%) translateY(105%);
+  border: 20px solid transparent;
+  border-top-color: #fcb72b;
+  content: "";
+}
+.location-4 {
+  position: absolute;
+  transform: translateX(370%) translateY(480%);
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #495567;
+  background-color: #fcb72b;
+}
+.location-4::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translateX(-180%) translateY(105%);
+  border: 20px solid transparent;
+  border-top-color: #fcb72b;
+  content: "";
+}
+@media only screen and (max-width: 1050px) {
+  .location-1 {
+    transform: translateX(180%) translateY(100%);
+  }
+  .location-2 {
+    transform: translateX(30%) translateY(180%);
+  }
+  .location-3 {
+    transform: translateX(330%) translateY(200%);
+  }
+  .location-4 {
+    transform: translateX(330%) translateY(500%);
+  }
+}
+@media only screen and (max-width: 970px) {
+  .location-1 {
+    font-size: 13px;
+    padding: 2px 30px;
+    transform: translateX(250%) translateY(400%);
+  }
+  .location-2 {
+    font-size: 13px;
+    padding: 2px 30px;
+    transform: translateX(100%) translateY(500%);
+  }
+  .location-3 {
+    font-size: 13px;
+    padding: 2px 30px;
+    transform: translateX(450%) translateY(540%);
+  }
+  .location-4 {
+    font-size: 13px;
+    padding: 2px 30px;
+    transform: translateX(440%) translateY(750%);
+  }
+  .location-1::after {
+    border: 15px solid transparent;
+    border-top-color: #fcb72b;
+    transform: translateX(-130%) translateY(95%);
+  }
+  .location-2::after {
+    border: 15px solid transparent;
+    border-top-color: #fcb72b;
+    transform: translateX(-160%) translateY(95%);
+  }
+  .location-3::after {
+    border: 15px solid transparent;
+    border-top-color: #fcb72b;
+    transform: translateX(-160%) translateY(95%);
+  }
+  .location-4::after {
+    border: 15px solid transparent;
+    border-top-color: #fcb72b;
+    transform: translateX(-150%) translateY(95%);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .location-link {
+    margin-top: -100px;
+    margin-bottom: -100px;
+    background-image: url(/images/location-mobil.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .location-link {
+      background-image: url(/images/location-mobil@2x.png);
+    }
+  }
+
+  .location-1 {
+    display: none;
+  }
+  .location-2 {
+    display: none;
+  }
+  .location-3 {
+    display: none;
+  }
+  .location-4 {
+    display: none;
+  }
+  .link-mobil {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .location-mobil1 {
+    width: 100%;
+    max-width: 600px;
+    height: 72px;
+    padding: 22px 0px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgba(252, 183, 43, 0.15);
+    color: #495567;
+  }
+  .location-mobil2 {
+    width: 100%;
+    max-width: 600px;
+    height: 72px;
+    padding: 22px 0px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgba(252, 183, 43, 0.15);
+    color: #495567;
+  }
+  .location-mobil3 {
+    width: 100%;
+    max-width: 600px;
+    height: 72px;
+    padding: 22px 0px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgba(252, 183, 43, 0.15);
+    color: #495567;
+  }
+  .location-mobil4 {
+    width: 100%;
+    max-width: 600px;
+    height: 72px;
+    padding: 22px 0px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgba(252, 183, 43, 0.15);
+    color: #495567;
+  }
+}
